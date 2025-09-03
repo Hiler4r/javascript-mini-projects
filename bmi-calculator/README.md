@@ -9,6 +9,7 @@ A simple web-based BMI (Body Mass Index) Calculator built with JavaScript.
 - Calculates BMI instantly
 - Displays BMI category (Underweight, Normal, Overweight, Obese)
 - Responsive and user-friendly interface
+backend
 
 ## Setup
 
