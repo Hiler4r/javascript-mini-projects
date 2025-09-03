@@ -1,0 +1,23 @@
+{
+  "name": "javascript-mini-projects",
+  "version": "1.0.0",
+  "description": "javascript mini projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "codar": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch"
+
+  },
+  "keywords": [
+    "tailwindcss",
+    "css",
+    "html",
+    "js"
+  ],
+  "author": "Anuoluwapo",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "tailwindcss": "^4.1.12"
+  }
+}
