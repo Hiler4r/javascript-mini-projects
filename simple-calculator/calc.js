@@ -37,6 +37,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 return
             }
 
+                // Backspace button logic
+                if (value === '⌫') {
+                    expression = expression.slice(0, -1)
+                    display.value = expression || '0'
+                    return
+                }
+
             const mappedValue = operators[value] || value
 
             if (isOperator(value) && (expression === '' || isOperator(expression.slice(-1)))) {
