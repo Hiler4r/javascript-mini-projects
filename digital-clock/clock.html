@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="../output.css">
+</head>
+<body>
+    <main class="clock">
+        <h1>Digital Clock</h1>
+    <button id="toggleFormat" class="px-4 py-2 mb-3 rounded-lg bg-blue-600 text-white font-semibold shadow hover:bg-blue-700 transition-colors cursor-pointer">Switch to 24-hour</button>
+
+    <div id="dateDisplay" class=" flex flex-row w-1/4 items-center justify-center text-center text-xl font-extrabold  mb-9 p-4 bg-gradient-to-r from-blue-950 to-sky-600 text-white rounded-xl shadow-2xl border-2 border-white"></div>
+        <section>
+            <div>
+                <span>00</span>
+                <span>hour</span>
+            </div>
+            <div>
+                <span>00</span>
+                <span>minutes</span>
+            </div>
+            <div>
+                <span>00</span>
+                <span>seconds</span>
+            </div>
+            <div>
+                <span>00</span>
+                <span>milliseconds</span>
+            </div>
+            <div>
+                <span>am/pm</span>
+            </div>
+        </section>
+    </main>
+    
+</body>
+
+<script src="./clock.js"></script>
+</html>
