@@ -7,6 +7,7 @@
         @apply w-full h-16 text-3xl hover:border-slate-950 rounded-lg cursor-pointer hover:border-4;
     }
 
+    /* digital clock */
     .clock {
         @apply h-screen bg-gradient-to-br from-slate-900 to-slate-700 flex flex-col items-center justify-center gap-y-4
     }
@@ -36,6 +37,23 @@
         
     }
 
+/* todo app */
+    .todo {
+        @apply h-screen flex items-center justify-center bg-gradient-to-bl from-sky-500 to-orange-500 p-6
+    }
+    .todo section {
+        @apply w-full max-w-xl bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-6 text-white
+    }
+
+    .todo h1 {
+        @apply text-3xl font-bold mb-4
+    }
+
+    .todo div {
+        @apply flex-1 px-3 py-2 rounded-lg text-black focus:outline-none flex flex-row justify-between items-center
+    }
+    
+    
 
 }
 
@@ -61,3 +79,4 @@
     }
 
 }
+
