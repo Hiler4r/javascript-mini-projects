@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do application</title>
+    <link rel="stylesheet" href="../output.css">
+    
+</head>
+
+<body>
+    <main class="todo gap-x-6">
+        <section>
+
+            <h1> A Todo List Application</h1>
+            <div class="flex gap-x-3">
+                <input class="w-3/4 border-2 border-black/50 text-2xl" type="text" id="taskInput" placeholder="Enter a new task...">
+                <button id="button" class="px-4 py-2 w-1/4 hover:bg-orange-700 bg-orange-600 rounded-lg font-bold cursor-pointer "> Add Task</button>
+            </div>
+        </section>
+        <section class="min-h-70  p-4 bg-white/10  text-black rounded-2xl shadow-2xl  backdrop-blur-lg">
+            <h1>Task List</h1>
+            <ul id="taskList" class="space-y-2 max-h-80 overflow-y-auto">
+
+
+            </ul>
+        </section>
+    </main>
+</body>
+<script src="./to-do.js"></script>
+</html>
