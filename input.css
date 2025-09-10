@@ -3,8 +3,28 @@
 @layer components {
     /* simple-calculator */
 
-    .btn {
+    .calc button {
         @apply w-full h-16 text-3xl hover:border-slate-950 rounded-lg cursor-pointer hover:border-4;
+    }
+
+    .calc form {
+        @apply max-w-4/5 mx-auto p-8 bg-white rounded-lg shadow-2xl;
+    }
+
+    .calc form label,
+    .calc form input,
+    .calc form textarea {
+        @apply block mb-2 text-gray-700 font-bold w-full;
+
+    }
+
+    .calc form input,
+    .calc form textarea {
+        @apply border border-gray-300 p-2 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-orange-500;
+    }
+
+    .calc form button {
+        @apply bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-auto transition-colors duration-300 cursor-pointer font-bold;
     }
 
     /* digital clock */
@@ -31,16 +51,16 @@
     .clock div :last-child {
         @apply text-xl capitalize bg-sky-900 text-white h-10 flex items-center w-full justify-center rounded-b-lg font-medium
     }
+
     .clock div:last-of-type :last-child {
         @apply mt-20
-
-        
     }
 
-/* todo app */
+    /* todo app */
     .todo {
         @apply h-screen flex items-center justify-center bg-gradient-to-bl from-sky-500 to-orange-500 p-6
     }
+
     .todo section {
         @apply w-full max-w-xl bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-6 text-white
     }
@@ -52,31 +72,61 @@
     .todo div {
         @apply flex-1 px-3 py-2 rounded-lg text-black focus:outline-none flex flex-row justify-between items-center
     }
+
+    /* ////////////////////////////////// */
+
+    .roman {
+        @apply min-h-screen flex items-center justify-center bg-gradient-to-t from-indigo-400 to-purple-500 font-sans;
+    }
+
+    .roman-container {
+        @apply w-[92vw] max-w-4xl aspect-video rounded-3xl shadow-2xl bg-white/10 backdrop-blur-md p-10 flex flex-col justify-between;
+    }
+
+    .roman-title {
+        @apply text-white text-3xl font-extrabold tracking-wide;
+    }
+
+    .roman-subtitle {
+        @apply text-white/80 mt-2 text-sm;
+    }
+
+    .roman-card {
+        @apply bg-white/10 rounded-2xl p-6 flex flex-col gap-4;
+    }
+
+    .roman-card-title {
+        @apply text-white text-lg font-semibold;
+    }
+
+    .roman input {
+        @apply p-3 rounded-lg bg-white text-gray-900 focus:outline-none;
+    }
+
+    .roman button {
+        @apply py-3 rounded-lg bg-gradient-to-r text-white font-semibold;
+    }
+
+    .roman-secondary-btn {
+        @apply px-4 py-2 rounded-lg bg-white/20 hover:bg-white/30 text-white;
+    }
+
+    .roman-result-box {
+        @apply mt-6 bg-white/10 rounded-2xl p-6 text-center;
+    }
+
+    .roman-result-label {
+        @apply text-white/80 text-sm;
+    }
+
+    .roman-result {
+        @apply mt-2 text-2xl font-bold text-white;
+    }
     
-    
+
+
+
 
 }
 
-@layer base {
-    form {
-        @apply max-w-4/5 mx-auto p-8 bg-white rounded-lg shadow-2xl;
-    }
-
-    form label,
-    form input,
-    form textarea {
-        @apply block mb-2 text-gray-700 font-bold w-full;
-
-    }
-
-    form input,
-    form textarea {
-        @apply border border-gray-300 p-2 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-orange-500;
-    }
-
-    form button {
-        @apply bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-auto transition-colors duration-300 cursor-pointer font-bold;
-    }
-
-}
-
+@layer base {}
