@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roman Numeral Converter </title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="roman">
+    <!-- 16:9 Frame -->
+    <main class="roman-container">
+
+        <!-- Header -->
+        <header class="text-center">
+            <h1 class="roman-title">Roman Numeral Converter</h1>
+            <p class="roman-subtitle">Easily convert between decimal numbers and Roman numerals</p>
+        </header>
+
+        <!-- Converter Section -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 flex-1 items-center">
+            <!-- Decimal to Roman -->
+            <div class="roman-card">
+                <h2 class="roman-card-title">Number → Roman</h2>
+                <input id="numberInput" type="number" min="1" max="3999" placeholder="Enter number (1–3999)" />
+                <button id="toRomanBtn" class=" from-indigo-400 to-purple-500">Convert</button>
+            </div>
+
+            <!-- Roman to Decimal -->
+            <div class="roman-card">
+                <h2 class="roman-card-title">Roman → Number</h2>
+                <input id="romanInput" type="text" placeholder="Enter Roman numeral (e.g. MCMXCIV)" />
+                <button id="toNumberBtn" class=" from-purple-500 to-indigo-400">Convert</button>
+            </div>
+        </section>
+
+        <!-- Result Section -->
+        <section class="roman-result-box">
+            <div class="roman-result-label">Result</div>
+            <div id="result" class="roman-result">—</div>
+            <div class="mt-4 flex justify-center gap-4">
+                <button id="copyBtn" class="roman-secondary-btn">Copy</button>
+                <button id="clearBtn" class="roman-secondary-btn">Clear</button>
+            </div>
+        </section>
+
+    </main>
+    <script src="./roman.js"></script>
+</body>
+
+</html>
